@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Details</title>
+    <link rel="stylesheet" href="Products Details.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color: #fff9f5;" >
+ <div style="background:rgb(243, 100, 120);height: 48px;display: flex;align-items: center;justify-content: center;" id="hidetimmer">
+  <div id="countdown">
+    <div class="content_inner_countdown">
+      <p>HURRY UP! SALE ENDS IN : </p>
+    </div>
+    <ul class="ul_countdown" style="margin: 0px;">
+      <li class="li-timer" style="display:none;"><span id="days">0</span>days</li>
+      <li class="li-timer"><span id="hours">9</span>Hrs :</li>
+      <li class="li-timer"><span id="minutes">17</span>Mins :</li>
+      <li class="li-timer"><span id="seconds">55</span>Secs</li>
+    </ul>
+  </div>
+</div>
+<style> @media only screen and (max-width: 900px) {#shopify-section-announcement-bar .mobile {display: block; width: 100%; font-size: 10px; text-align: center; }} #shopify-section-announcement-bar .announcement-bar__message {font-weight: 700;} 
+</style>
+<!-- NevBar -->
+<nav class="navbar">
+    <div class="nav-bar-sl">
+        <!-- search area -->
+        <div class="search-bar">
+            <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="Search icon" />
+            <input type="text" placeholder="Search for you Lehenga" />
+        </div>
+        <!-- Logo -->
+        <a class="navbar-logo" href="/">
+            <img src="Logo1.png" alt="Shopping with Us" class="logo-img" />
+        </a>
+        <div class="Right-side-icons">
+            <a href="#"><i class="fa-solid fa-user " ></i></a>
+            <a href="#"><i class="fa-regular fa-heart "></i></a>
+            <a href="#"><i class="fa-solid fa-bag-shopping "></i><a>
+            <a href="#"><i class="fa-solid fa-truck-fast "></i><a>
+        </div>
+    </div>
+    <!-- Navigation Links -->
+    <div class="navbar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Best Seller</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Lehenga Sets</a></li>
+        <li><a href="#">Gowns</a></li>
+        <li><a href="#">Saree</a></li>
+        <li><a href="#">Western Wear</a></li>
+        <li><a href="#">Celebrities</a></li>
+    </div>   
+</nav>
+
+<div class="product-container">
+  <!-- <h1 class="pd-details">Product Details</h1> -->
+
+  <div class="product-gallery">
+    <div class="thumbnails">
+      <img src="/image/Details Pages/image-2.jpeg" alt="thumb">
+      <img src="/image/Details Pages/image-1.jpeg" alt="thumb">
+      <img src="/image/Details Pages/image-3.jpeg" alt="thumb">
+      <img src="/image/Details Pages/image-4.jpeg" alt="thumb">
+      <img src="/image/Details Pages/image-5.jpeg" alt="thumb">
+      <img src="/image/Details Pages/image-6.jpeg" alt="thumb">
+      <img src="/image/Details Pages/image-7.jpeg" alt="thumb">
+      <img src="/image/Details Pages/image-8.jpeg" alt="thumb">
+      <img src="/image/Details Pages/image-9.jpeg" alt="thumb">
+    </div>
+
+    <div class="main-image">
+      <img
+        id="mainImage"
+        src="/image/Details Pages/WhatsApp Image 2025-07-12 at 2.31.43 PM.jpeg"
+        alt="Dreamy Taily Blue Corset"
+      />
+    </div>
+  </div><!-- /.product-gallery -->
+
+  <div class="product-details">
+    <h1>Dark Blue Flower Bouqet Long Dress</h1>
+    <p class="price">₹5,950</p>
+    <p class="tax-info">Inclusive of all taxes</p>
+    <hr>
+
+    <div class="offer1">
+      <p><b>Offers.</b> <span class="off">1 Available</span></p>
+    </div>
+
+    <div class="offer">
+      <h4>🏷️ Prepay &amp; Save!</h4>
+      <h5>5% OFF on all prepaid orders.</h5>
+    </div>
+    <hr>
+
+    <div class="size-selector">
+      <p><strong>Size:</strong></p>
+      <div class="sizes">
+        <label><input type="radio" name="size" value="XS">XS</label>
+        <label><input type="radio" name="size" value="S">S</label>
+        <label><input type="radio" name="size" value="M">M</label>
+        <label><input type="radio" name="size" value="L">L</label>
+        <label><input type="radio" name="size" value="XL">XL</label>
+        <label><input type="radio" name="size" value="XXL">XXL</label>
+      </div>
+    </div>
+
+    <div class="quantity">
+      <p><strong>Quantity:</strong></p>
+      <div class="quantity-box">
+        <button id="decrease">−</button>
+        <input type="text" id="qty" value="1" readonly>
+        <button id="increase">+</button>
+      </div>
+    </div>
+    <hr>
+
+    <button class="add-to-cart">ADD TO CART</button>
+
+    <div class="pickup-info">
+      <p class="pickup-title">🗸 Pickup available at Bhilwara Warehouse</p>
+      <p class="pickup-subtext">Usually ready in 24 hours</p>
+      <a href="#"><u>View store information</u></a>
+    </div>
+  </div><!-- /.product-details -->
+
+  <!-- Accordion Section (kept inside container, after product details) -->
+  <section>
+    <div class="accordion">
+
+      <div class="accordion-item">
+        <div class="accordion-header">ABOUT THIS PRODUCT</div>
+        <div class="accordion-content">
+          <p>
+            Turn heads with this stunning Electric Blue Long One-Shoulder Dress,
+            a masterpiece of bold elegance and artistry. The vibrant electric
+            blue hue exudes confidence, while the asymmetrical one-shoulder
+            design adds a modern, sleek touch. The standout feature is the
+            intricate, oversized colorful floral embroidery cascading across the
+            shoulder, blending vivid hues to create a striking focal point.
+            Crafted from luxurious fabric, the dress drapes gracefully,
+            enhancing your silhouette. Perfect for formal events or glamorous
+            evenings, this dress balances sophistication with a touch of playful
+            artistry. The bold embroidery celebrates nature and creativity,
+            making it a wearable work of art. Pair with minimal accessories to
+            let the details shine. A statement piece for the bold and stylish!
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">MATERIAL</div>
+        <div class="accordion-content">
+          <p>Polyester blend with soft lining.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">SPECIFICATION</div>
+        <div class="accordion-content">
+          <p>Hand wash only. Do not bleach.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">SELLER INFORMATION</div>
+        <div class="accordion-content">
+          <p>Shopping with Us, Bhilwara, Rajasthan, India.</p>
+        </div>
+      </div>
+
+    </div><!-- /.accordion -->
+  </section>
+
+</div><!-- /.container.product-container -->
+
+
+<h2 class="related-heading">You may also like</h2>
+<div class="related-products">
+  <div class="related-item">
+    <img src="/image/Details Pages/image-8.jpeg" alt="Bronze Corset">
+    <p>Blooming Blue Dress</p>
+    <p class="price">₹3,600</p>
+  </div>
+  <div class="related-item">
+    <img src="/image/Details Pages/image-6.jpeg" alt="Red Corset">
+    <p>Stella Blue Dress</p>
+    <p class="price">₹5,600</p>
+  </div>
+  <div class="related-item">
+    <img src="/image/Details Pages/image-4.jpeg" alt="Ivory Corset">
+    <p>Shiny Glam Gown</p>
+    <p class="price">₹6,000</p>
+  </div>
+  <div class="related-item">
+    <img src="/image/Details Pages/image-2.jpeg" alt="Blue Skirt Top Jacket Set">
+    <p>Lavender Love Long Dress</p>
+    <p class="price">₹4,300</p>
+  </div>
+</div>
+
+
+
+<!-- footer -->
+<footer>
+  <div class="footer__grid">
+    <div class="container">
+      <h4>TOP CATEGORIES</h4>
+      <ul class="inner">
+        <li><a href="#">Lehenga Sets</a></li>
+        <li><a href="#">Ethnicwear</a></li>
+        <li><a href="#">Saree</a></li>
+        <li><a href="#">Indo Western</a></li>
+        <li><a href="#">Gowns</a></li>
+        <li><a href="#">Western Wear</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h4>Discover</h4>
+      <ul>
+        <li><a href="#">About Us </a></li>
+        <li><a href="#">Careers </a></li>
+        <li><a href="#">Blogs </a></li>
+        <li><a href="#">Media </a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h4>SUPPORT</h4>
+      <ul>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Raise a Return and Exchange</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Buy In Bulk</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h4>POLICIES</h4>
+      <ul>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Return/Exchange Policy</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h4>Follow us</h4>
+      <ul class="social-icons">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="pera-cpy">© Copyright 2025 by Kala The Label. All Rights Reserved.</p>
+</footer>
+
+<script>
+// !-- js script -->
+//  <!-- Timer  -->
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  const timerContainer = document.getElementById("hidetimmer");
+
+  function getNextMidnight() {
+    const now = new Date();
+    const nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+    return nextMidnight.getTime();
+  }
+
+  function startCountdown() {
+    let countDown = getNextMidnight(); // Get time for the next midnight
+
+    const x = setInterval(function () {
+      const now = new Date().getTime(),
+            distance = countDown - now;
+
+      document.getElementById("days").innerText = Math.floor(distance / day);
+      document.getElementById("hours").innerText = Math.floor((distance % day) / hour);
+      document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute);
+      document.getElementById("seconds").innerText = Math.floor((distance % minute) / second);
+
+      if (distance <= 0) {
+        // Fade out the timer before resetting
+        timerContainer.style.opacity = "0"; // Start fading out
+        setTimeout(function () {
+          timerContainer.style.opacity = "1"; // Reset opacity
+          timerContainer.style.display = "block"; // Ensure visibility for the next countdown
+          startCountdown(); // Restart countdown for the next midnight
+        }, 1000); // Match the duration of the fade-out transition
+        clearInterval(x);
+      }
+    }, 1000); // Update every second
+  }
+
+  startCountdown(); // Initialize the countdown
+})();
+
+//  NEW CODE 
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+
+
+</script>
+</body>
+</html>
